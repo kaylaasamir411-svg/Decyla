@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 400 120">
+  <rect width="400" height="120" rx="12" fill="none"/>
+  <g font-family="Poppins, Roboto, Arial, sans-serif">
+    <text x="88" y="48" font-size="40" fill="#1f2a32" font-weight="700">DECAYLA</text>
+    <text x="88" y="78" font-size="14" fill="#6b7378">Decisions Reimagined by Kayla</text>
+  </g>
+  <g transform="translate(18,20)">
+    <rect x="0" y="0" width="56" height="56" rx="8" fill="#17b5b8"/>
+    <text x="28" y="36" font-size="28" fill="#fff" font-family="Poppins, Roboto, Arial" font-weight="700" text-anchor="middle">f</text>
+  </g>
+</svg>

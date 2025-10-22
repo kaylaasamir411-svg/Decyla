@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DECAYLA — Dashboard (Offline)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="DECAYLA logo" class="logo-img" />
+      <div>
+        <h1>DECAYLA</h1>
+        <p class="tagline">Decisions Reimagined by Kayla</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Select Your Optimization Model and Use Case</h2>
+      <p>Please choose a model and the intended use case for DECAYLA.</p>
+
+      <div class="control-row">
+        <label for="model">Model:</label>
+        <select id="model">
+          <option value="linear">Linear Programming</option>
+          <option value="simplex">Simplex Method</option>
+          <option value="transport">Transportation Model</option>
+        </select>
+
+        <label for="usecase">Use case:</label>
+        <select id="usecase">
+          <option value="warehouse">Warehouse Optimization</option>
+          <option value="retail">Retail / Supermarket Distribution</option>
+          <option value="academic">Academic Scheduling (Classrooms)</option>
+        </select>
+      </div>
+
+      <div class="btn-row">
+        <button id="openBtn">Open Selected Model</button>
+      </div>
+
+      <p class="muted">This is an offline prototype. Each model opens a dedicated page for input and results.</p>
+    </section>
+
+    <section class="card">
+      <h3>Quick workflow</h3>
+      <ol>
+        <li>Choose model and use case.</li>
+        <li>Enter objective and constraints (or supply/demand & costs for transportation).</li>
+        <li>Click solve to see a recommended solution.</li>
+      </ol>
+      <p>If you want proper production solvers (exact Simplex, large-scale transportation), I can add a backend later.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>DECAYLA — Offline Prototype · by Kayla</small>
+  </footer>
+
+<script>
+document.getElementById('openBtn').addEventListener('click', function(){
+  var model = document.getElementById('model').value;
+  if(model === 'linear') window.location.href = 'linear.html';
+  if(model === 'simplex') window.location.href = 'simplex.html';
+  if(model === 'transport') window.location.href = 'transportation.html';
+});
+</script>
+</body>
+</html>
